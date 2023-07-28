@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-x: hidden;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+h3 {
+  white-space: nowrap;
+}
+.fa-solid,
+.fa-brands {
+  padding-inline: 8px;
+  color: #f8e7d0;
+}
+
+.divider {
+  width: 30vw;
+  max-width: 30vw;
+  background: #a59c8f;
+
+  border: 1px solid #a59c8f;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  background: #059a91;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  margin: 0 auto;
+}
+a {
+  color: black;
+}
+
+.logo a {
+  font-family: "Roboto Slab", serif;
+  font-size: x-large;
+  color: #f8e7d0;
+}
+.menu-items a {
+  color: #f8e7d0;
+  padding-inline: 16px;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  background: url("../img/justice-2.jpeg");
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+h1 {
+  font-size: xxx-large;
+  color: #44dad2;
+}
+.title {
+  font-size: xx-large;
+  margin-bottom: 0.2em;
+}
+.btn {
+  display: inline-block;
+  background: #645647;
+  color: #f8e7d0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 50px;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+/* WHO */
+#who {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #059a91;
+  align-items: center;
+  justify-content: center;
+}
+.who-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#who p {
+  max-width: 90vw;
+}
+
+/* SERVIZI */
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 12px;
+  height: 80vh;
+  width: 100vw;
+  background: #f8e7d0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* TAB */
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tab p {
+  max-width: 90vw;
+}
+.slides {
+  gap: 16px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  transition: 0.4s all;
+  max-width: 780px;
+  overflow-x: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 250px;
+  min-width: 250px;
+  height: 250px;
+  max-height: 250px;
+  text-align: center;
+  background: #c4ad93;
+  padding-inline: 16px;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card i {
+  font-size: xx-large;
+  color: black;
+  margin-top: -40px;
+}
+.card p {
+  text-align: justify;
+}
+.card-img img {
+  width: 50px;
+  height: auto;
+  line-height: 40px;
+  margin: -30px auto 8px;
+}
+
+/* CONTACTS */
+
+#contacts {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+
+  align-items: center;
+}
+.contacts-text {
+  padding-inline: 16px;
+}
+.contacts-text span {
+  color: #8c7e6a;
+}
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f8e7d0;
+  background: #8c7e6a;
+  margin: 10%;
+  max-width: 300px;
+  height: auto;
+  padding: 24px 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+label {
+  color: #f8e7d0;
+}
+input {
+  border-radius: 10px;
+  max-width: 250px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+}
+.btn-form {
+  padding: 6px 10px;
+  background: #645647;
+  border-radius: 10px;
+  margin-top: 16px;
+  color: #f8e7d0;
+}
+/* FOOTER */
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  background: #059a91;
+  color: #f8e7d0;
+  text-align: center;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.footer-items {
+  text-align: center;
+  color: black;
+  padding-inline: 8px;
+  width: 20vh;
+}
+.footer-items h3 {
+  font-size: x-large;
+}
+.footer-items span {
+  display: block;
+}
+
+.footer-items a {
+  text-align: justify;
+}
+
+.footer-img img {
+  width: 20px;
+}
+#mail {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-divider {
+    width: 100%;
+    background: #a59c8f;
+    border: 1px solid #a59c8f;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    justify-content: space-between;
+  }
+  .fa-solid,
+  .fa-brands {
+    padding-right: 10px;
+    color: #f8e7d0;
+  }
+  .logo {
+    width: 50%;
+    display: contents;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: initial;
+    height: 12vh;
+  }
+  .logo a {
+    font-size: large;
+  }
+  .menu {
+    font-size: medium;
+  }
+  .menu-items {
+    direction: rtl;
+  }
+  .footer-items {
+    display: contents;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: xx-large;
+  }
+  #who {
+    height: 100%;
+  }
+  #services {
+    height: 100%;
+  }
+  .slides {
+    width: 50vw;
+  }
+  .card {
+    width: 45%;
+    margin: 8px;
+  }
+  #contacts {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .footer-items a {
+    font-size: medium;
+  }
+  #mail {
+    white-space: nowrap;
+  }
+}
+
+/* TODO: Sistemare divider e inserire testi footer in div */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-divider {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-divider {
+    display: none;
+  }
+}
