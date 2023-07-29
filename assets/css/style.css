@@ -27,7 +27,9 @@ h4 {
 }
 h3 {
   white-space: nowrap;
+  display: inline-block;
 }
+
 .fa-solid,
 .fa-brands {
   padding-inline: 8px;
@@ -231,6 +233,10 @@ h1 {
   text-align: center;
   border-radius: 10px;
 }
+.free:hover {
+  cursor: pointer;
+  color: #44dad2;
+}
 label {
   color: #f8e7d0;
 }
@@ -247,51 +253,46 @@ input {
   margin-top: 16px;
   color: #f8e7d0;
 }
+
+.btn-form:hover {
+  background: #059a91;
+  border: 1px solid #059a91;
+  color: black;
+}
+
 /* FOOTER */
 
-.footer {
+footer {
   display: flex;
-  width: 100%;
-  padding: 20px 0;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
   background: #059a91;
   color: #f8e7d0;
   text-align: center;
-  align-items: baseline;
-  justify-content: space-around;
-}
-.footer-items {
-  text-align: center;
-  color: black;
-  padding-inline: 8px;
-  width: 20vh;
-}
-.footer-items h3 {
   font-size: x-large;
 }
-.footer-items span {
-  display: block;
-}
-
-.footer-items a {
-  text-align: justify;
-}
-
-.footer-img img {
-  width: 20px;
-}
-#mail {
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30vw;
   white-space: nowrap;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: medium;
+}
+
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
-  .footer {
-    text-align: center;
-  }
-  .footer-divider {
-    width: 100%;
-    background: #a59c8f;
-    border: 1px solid #a59c8f;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -300,7 +301,7 @@ input {
   }
   .fa-solid,
   .fa-brands {
-    padding-right: 10px;
+    padding-inline: 10px;
     color: #f8e7d0;
   }
   .logo {
@@ -321,14 +322,14 @@ input {
   .menu-items {
     direction: rtl;
   }
-  .footer-items {
-    display: contents;
-  }
 }
 
 @media (max-width: 767px) {
   h1 {
     font-size: xx-large;
+  }
+  h3 {
+    font-size: small;
   }
   #who {
     height: 100%;
@@ -348,33 +349,14 @@ input {
     height: 100%;
     width: 100%;
   }
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-  }
-  .footer-items a {
-    font-size: medium;
-  }
-  #mail {
-    white-space: nowrap;
-  }
 }
-
-/* TODO: Sistemare divider e inserire testi footer in div */
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .navbar {
     flex-direction: row;
     align-items: center;
   }
-  .footer-divider {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {
-  .footer-divider {
-    display: none;
-  }
 }
