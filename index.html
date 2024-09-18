@@ -17,17 +17,22 @@
     </div>
     <div class="menu">
         <div class="menu-items">
-            <a href="#who">Chi siamo</a>
-            <a href="#services">Servizi</a>
-            <a href="#contacts">Contatti</a>
+            <a id="nav_who" href="#who">Who we are</a>
+            <a id="nav_services" href="#services">Services</a>
+            <a id="nav_cont" href="#contacts">Contact</a>
+             <span class="btn_container">
+                <button id="it" class="hidden" onclick="handleTranslate('it')">IT</button>
+                <button id="en" class="hidden" onclick="handleTranslate('en')">EN</button>
+            </span>
         </div>
+     
     </div>
 </div>
 <div class="header">
    
     <div class="header-text">
-          <h1>Justice and Competence at Your Service</h1>
-        <a class="btn" href="#contacts">Contact Us</a>
+          <h1 id="hero">Justice and Competence at Your Service</h1>
+        <a id="btn_contact" class="btn" href="#contacts">Contact Us</a>
     </div>
    
     </div>
@@ -35,42 +40,42 @@
 <div class="main">
     <div id="who">
         <div class="who-text">
-            <h2 class="title">Welcome to Studio Legale Rossi and Associates</h2>
+            <h2 id="who_title" class="title">Welcome to Studio Legale Rossi and Associates</h2>
             <div class="divider"></div>
-            <p>We are a dedicated law firm providing high-quality legal assistance to our clients. With years of experience in resolving a wide range of legal issues, our team of expert attorneys is always ready to defend the rights of our clients..</p>
+            <p id="who_text">We are a dedicated law firm providing high-quality legal assistance to our clients. With years of experience in resolving a wide range of legal issues, our team of expert attorneys is always ready to defend the rights of our clients..</p>
         </div>
     </div>
     <div id="services">
         <div class="tab">
-            <h2 class="title">Customized Legal Solutions for Every Need</h2>
-            <p>In our law firm, we understand that every legal situation is unique. We offer a wide range of personalized legal services to meet the specific needs of our clients. Our main services include:</p>
+            <h2 id="services_title" class="title">Customized Legal Solutions for Every Need</h2>
+            <p id="services_text">In our law firm, we understand that every legal situation is unique. We offer a wide range of personalized legal services to meet the specific needs of our clients. Our main services include:</p>
         </div>
         <div class="slider">
             <ul class="slides">
                 <li class="card">
                    <i class="fa-solid fa-scale-balanced"></i>
-                    <h4>Legal Advice</h4>
-                    <p>We provide competent and in-depth legal advice to guide you through complex matters.</p>
+                    <h4 id="legal_title">Legal Advice</h4>
+                    <p id="legal_text">We provide competent and in-depth legal advice to guide you through complex matters.</p>
                 </li>
                   <li class="card">
                     <i class="fa-solid fa-users-line"></i>
-                    <h4>Family Law</h4>
-                    <p>Our team of specialist lawyers offers assistance in matters of divorce, child custody and other family matters.</p>
+                    <h4 id="family_title">Family Law</h4>
+                    <p id="family_text" >Our team of specialist lawyers offers assistance in matters of divorce, child custody and other family matters.</p>
                 </li>
                 <li class="card">
                     <i class="fa-solid fa-briefcase"></i>
-                    <h4>Commercial Law</h4>
-                    <p>We are ready to support you in the business sector with contractual advice and representation in commercial disputes.</p>
+                    <h4 id="commercial_title">Commercial Law</h4>
+                    <p id="commercial_text">We are ready to support you in the business sector with contractual advice and representation in commercial disputes.</p>
                 </li>
                 <li class="card">
                    <i class="fa-solid fa-city"></i>
-                    <h4>Real Estate Law</h4>
-                    <p>We help you navigate the complex world of real estate law, including lease agreements and landlord-tenant disputes.</p>
+                    <h4 id="estate_title">Real Estate Law</h4>
+                    <p id="estate_text">We help you navigate the complex world of real estate law, including lease agreements and landlord-tenant disputes.</p>
                 </li>
                 <li class="card">
                     <i class="fa-solid fa-user-gear"></i>
-                    <h4>Labor law</h4>
-                    <p> We protect your rights as an employee and advise on issues of termination and discrimination in the workplace.</p>
+                    <h4 id="labor_title">Labor Law</h4>
+                    <p id="labor_text"> We protect your rights as an employee and advise on issues of termination and discrimination in the workplace.</p>
                 </li>
               
             </ul>
@@ -78,20 +83,20 @@
     </div>
     <div id="contacts">
         <div class="contacts-text">
-        <h2 class="title">Your First Consultation is <span class="free">Free</span></h2>
+        <h2 id="contact_title" class="title">Your First Consultation is <span class="free">Free</span></h2>
         <div class="divider"></div>
-        <p>If you need legal assistance or want to learn more about our services, do not hesitate to contact us. Your first consultation with one of our expert attorneys is free. We are here to listen to your story and provide you with the best legal strategy for your case.</p>
+        <p id="contact_text">If you need legal assistance or want to learn more about our services, do not hesitate to contact us. Your first consultation with one of our expert attorneys is free. We are here to listen to your story and provide you with the best legal strategy for your case.</p>
         </div>
         <div class="form-container">
             <form class="contacts-form" action="">
-            <label for="name">Name</label>
+            <label id="label_name" for="name">Name</label>
             <input type="text">
-            <label for="surname">Surname</label>
+            <label id="label_surname" for="surname">Surname</label>
             <input type="text">
-            <label for="date">Choose a date</label>
+            <label  id="label_date" for="date">Choose a date</label>
             <input type="datetime-local" name="date" id="date-picker">
          
-            <a href="#mail" class="btn-form">Submit</a>
+            <a href="#mail" id="btn_form" class="btn-form">Submit</a>
             </form>
         </div>
     </div>
@@ -101,7 +106,7 @@
      <div class="footer-items">
         <div class="contacts">
                 
-                    <a href="https://wa.me/123456789"><i class="fa-solid fa-phone"></i>Tel 123-456789</a>
+                    <a id="phone" href="https://wa.me/123456789"><i class="fa-solid fa-phone"></i>Phone: 123-456789</a>
                     <a href="mailto:info@legal.com"><i class="fa-solid fa-envelope"></i> info@legal.com</a>
         </div>
     
@@ -115,5 +120,6 @@
 
        </div>
     </footer>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
